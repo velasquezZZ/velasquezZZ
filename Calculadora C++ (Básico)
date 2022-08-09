@@ -1,0 +1,45 @@
+#include <iostream>
+#include <locale.h>
+
+using namespace std;
+
+	int main(){
+	int op, calculo, valor01, valor02;
+	cout<<"calculadora "<<endl;
+	cout<<"1 - soma "<<endl;
+	cout<<"2 - subtração "<<endl;	
+	cout<<"3 - divisão "<<endl;
+	cout<<"4- multiplicação  "<<endl;	
+	cout<<"Informe a opção desejada:  "<<endl;
+	cin>>op;
+	cout<<"Informe o valor01"<<endl;
+		cin>>valor01;	
+	while (valor01 <=0){ 
+		cout<<"valor Inválido";
+		cin>>valor01;
+	}	
+	cout<<"Informe o valor02"<<endl;
+	cin>>valor02;	
+	while (valor02 <=0){
+		cout<<"valor Inválido";
+		cin>>valor02;	
+	}
+	if (op == 1){
+		calculo = valor01 + valor02;	
+	}	
+	else if (op == 2){
+		calculo = valor01 - valor02;	
+	}	
+	else if (op == 3){
+		calculo = valor01 / valor02;  
+	}	
+	else if (op == 4){
+		calculo = valor01 * valor02;
+	}		
+	else {
+		cout<<"Opção Inválida"<<endl;
+	}	
+	cout<<"Resultado:  "<<calculo;	
+		
+		return 0;		
+	}
